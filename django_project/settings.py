@@ -2,6 +2,7 @@
 Django settings for django_project project.
 It is a boilerplate project.
 """
+
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
@@ -108,6 +109,26 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+
+# email sending function
+# odcl
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "mail.onedirectionglobal.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "career@onedirectionglobal.com"
+# EMAIL_HOST_PASSWORD = "KuB)X?[yz*!q"
+# EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
+
+# axia
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "axiagroups.com"
+EMAIL_PORT = 465
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = "career@axiagroups.com"
+EMAIL_HOST_PASSWORD = "0penitpls/*-"
 
 
 # Static files (CSS, JavaScript, Images)
