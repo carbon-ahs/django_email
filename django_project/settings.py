@@ -113,22 +113,23 @@ USE_TZ = True
 
 # email sending function
 # odcl
-# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-# EMAIL_HOST = "mail.onedirectionglobal.com"
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = "career@onedirectionglobal.com"
-# EMAIL_HOST_PASSWORD = "KuB)X?[yz*!q"
+EMAIL_BACKEND = "django_smtp_ssl.SSLEmailBackend"
+EMAIL_HOST = "mail.onedirectionglobal.com"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "careerp@onedirectionglobal.com"
+EMAIL_HOST_PASSWORD = "gLcG)qHy]GRL"
+EMAIL_USE_SSL = True
 # EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False
 
 # axia
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "axiagroups.com"
-EMAIL_PORT = 465
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-EMAIL_HOST_USER = "career@axiagroups.com"
-EMAIL_HOST_PASSWORD = "0penitpls/*-"
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "axiagroups.com"
+# EMAIL_PORT = 25
+# # EMAIL_USE_TLS = True
+# # EMAIL_USE_SSL = False
+# # EMAIL_USE_SSL = True
+# EMAIL_HOST_USER = "career@axiagroups.com"
+# EMAIL_HOST_PASSWORD = "0penitpls/*-"
 
 
 # Static files (CSS, JavaScript, Images)
