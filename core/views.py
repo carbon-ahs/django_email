@@ -25,7 +25,7 @@ def something_cool(request):
             message,
             from_mail,
             to_mails,
-            fail_silently=False,
+            fail_silently=True,
         )
         print("done")
 
